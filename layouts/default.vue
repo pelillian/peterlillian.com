@@ -4,10 +4,16 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@font-face {
+    font-family: 'League Spartan';
+    src: url('~assets/fonts/LeagueSpartan-VF.woff2') format('woff2-variations');
+    font-weight: 200 900;
+}
+
 html {
   font-family:
-    'Source Sans Pro',
+    'League Spartan',
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -15,13 +21,15 @@ html {
     'Helvetica Neue',
     Arial,
     sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
+  font-weight: bold;
+  font-size: 18px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: #180030;
+  color: #fff;
 }
 
 *,
@@ -31,32 +39,25 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 800px;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.button--green:hover {
+.title {
+  display: block;
+  font-size: 100px;
+  letter-spacing: 10px;
   color: #fff;
-  background-color: #3b8070;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.subtitle {
+  padding-top: 15px;
 }
 </style>

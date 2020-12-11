@@ -1,73 +1,77 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        peterlillian.com
-      </h1>
+      <h1 class="title">PETER LILLIAN</h1>
+      <span class="subtitle">
+        Food for thought: Future beings will appear as godlike to us as we do to ants. But unless they can find a way around the laws of physics, they'll have the same existential problems that ants do: entropy is always increasing.
+      </span>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
+        <NuxtLink
+          to="/resume"
+          class="button"
         >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
+          RESUME
+        </NuxtLink>
+        <NuxtLink
+          to="/resume"
+          class="button"
         >
-          GitHub
-        </a>
+          ART
+        </NuxtLink>
+        <NuxtLink
+          to="/resume"
+          class="button"
+        >
+          THOUGHTS
+        </NuxtLink>
+        <NuxtLink
+          to="/resume"
+          class="button"
+        >
+          CONTACT
+        </NuxtLink>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  head () {
+    return {
+      title: 'Peter Lillian'
+    }
+  }
+}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
+<style lang="scss" scoped>
 .links {
   padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .button {
+    position: relative;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    &:hover, &:focus {
+      &::after {
+        height: 4px;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 100%;
+      background: linear-gradient(130deg, #734a1f, #d59748, #e7bf8f, #d59748);
+      transition: height .2s ease;
+    }
+  }
 }
 </style>
