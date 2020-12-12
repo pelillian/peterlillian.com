@@ -17,5 +17,7 @@ module.exports = {
   rules: {
     'vue/singleline-html-element-content-newline': 'off',
     'vue/multiline-html-element-content-newline': 'off',
+    'space-before-function-paren': ['error', 'never'],
+    'one-var': 'consecutive'
   }
 }

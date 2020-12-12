@@ -1,8 +1,41 @@
 <template>
-  <div>
+  <div :style="perspective" @mousemove="move">
     <Nuxt />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      xRot: 0,
+      yRot: 0,
+      xT: 0,
+      yT: 0,
+      zT: 0
+    }
+  },
+  computed: {
+    perspective() {
+      return {
+        transform: `translate3d(${this.xT}px,${this.yT}px,${this.zT}px) rotateX(${this.xRot}deg) rotateY(${this.yRot}deg)`
+      }
+    }
+  },
+  methods: {
+    move(e) {
+      const w = window.innerWidth,
+        h = window.innerHeight,
+        offX = 0.5 - e.pageX / w,
+        offY = 0.5 - e.pageY / h
+      this.yRot = -offX * 20
+      this.xRot = offY * 20
+      this.xT = offX * 20
+      this.yT = offY * 20
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 @font-face {
@@ -59,5 +92,28 @@ html {
 
 .subtitle {
   padding-top: 15px;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.page-enter-active {
+  transition-timing-function: ease-out;
+}
+.page-leave-active {
+  transition-timing-function: ease-in;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+.page-enter {
+  //transform: translate(-100vw, -100vh);
+  transform: rotateX(360deg);
+}
+.page-leave-to {
+  //transform: translate(100vw, 100vh);
+  transform: rotateX(-360deg);
 }
 </style>
