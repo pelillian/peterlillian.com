@@ -18,7 +18,7 @@ export default {
   computed: {
     perspective() {
       return {
-        transform: `translate3d(${this.xT}px,${this.yT}px,${this.zT}px) rotateX(${this.xRot}deg) rotateY(${this.yRot}deg)`
+        transform: `translate3d(${this.xT}px,${this.yT}px,${this.zT}px) perspective(800px) rotateX(${this.xRot}deg) rotateY(${this.yRot}deg)`
       }
     }
   },
@@ -28,8 +28,8 @@ export default {
         h = window.innerHeight,
         offX = 0.5 - e.pageX / w,
         offY = 0.5 - e.pageY / h
-      this.yRot = -offX * 20
-      this.xRot = offY * 20
+      this.yRot = -offX * 14
+      this.xRot = offY * 14
       this.xT = offX * 20
       this.yT = offY * 20
     }
