@@ -34,7 +34,7 @@
           THOUGHTS
         </NuxtLink>
         <NuxtLink
-          to="/resume"
+          to="/contact"
           class="button"
           data-after="CONTACT"
         >

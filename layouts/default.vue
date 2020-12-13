@@ -1,6 +1,6 @@
 <template>
-  <div :style="perspective" @mousemove="move">
-    <Nuxt />
+  <div @mousemove="move">
+    <Nuxt :style="perspective" />
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
   <div class="container">
-    <h1 class="title">RESUME</h1>
+    <h1 class="title">CONTACT</h1>
   </div>
 </template>
