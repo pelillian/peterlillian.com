@@ -70,7 +70,7 @@ export default {
     text-decoration: none;
     padding: 10px 30px;
     transform: scale(0.8);
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     transition-property: color transform;
     &:hover, &:focus {
       color: #180030;
@@ -95,7 +95,7 @@ export default {
       -webkit-text-fill-color: transparent;
       -moz-background-clip: text;
       -moz-text-fill-color: transparent;
-      transition: opacity 0.2s ease;
+      transition: opacity 0.3s ease;
     }
   }
 }
