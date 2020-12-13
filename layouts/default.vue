@@ -96,24 +96,11 @@ html {
 
 .page-enter-active,
 .page-leave-active {
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-.page-enter-active {
-  transition-timing-function: ease-out;
-}
-.page-leave-active {
-  transition-timing-function: ease-in;
+  transition: transform 0.5s ease, opacity 0.5s ease !important;
 }
 .page-enter,
 .page-leave-to {
   opacity: 0;
-}
-.page-enter {
-  //transform: translate(-100vw, -100vh);
-  transform: rotateX(360deg);
-}
-.page-leave-to {
-  //transform: translate(100vw, 100vh);
-  transform: rotateX(-360deg);
+  transform: rotateX(30deg) rotateY(30deg) !important;
 }
 </style>
