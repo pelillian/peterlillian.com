@@ -49,10 +49,16 @@ export default {
 
 <style lang="scss" scoped>
 .links {
-  padding-top: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   max-width: 100%;
+  .button {
+    margin: 5px 0 0 0;
+  }
 }
 </style>
