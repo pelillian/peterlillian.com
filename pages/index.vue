@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">PETER LILLIAN</h1>
+      <h1>PETER LILLIAN</h1>
       <p class="subtitle">
         Food for thought: Future beings will appear as godlike to us as we do to ants.
       </p>
@@ -25,3 +25,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.subtitle {
+  padding-top: 15px;
+}
+</style>

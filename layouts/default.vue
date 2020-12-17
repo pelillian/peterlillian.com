@@ -83,15 +83,16 @@ html {
   text-align: center;
 }
 
-.title {
+h1 {
   display: block;
   font-size: 100px;
   letter-spacing: 10px;
-  color: #fff;
 }
 
-.subtitle {
-  padding-top: 15px;
+h2 {
+  display: block;
+  font-size: 30px;
+  margin-top: 90px;
 }
 
 .button {
