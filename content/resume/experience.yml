@@ -10,38 +10,38 @@ data:
     info: >
       During my internship, I built a new ML system from unlabeled data to identify and categorize Apple Cash accounts. Included unsupervised analysis, data wrangling, label discovery, visualization, and plenty of collaboration. Culminated in a presentation on the concrete business applications of my work.
   - org: Robotic Embedded Systems Lab, FPGA Lab, CAIS++
-    where: USC Viterbi
+    where: USC Viterbi, Los Angeles, CA
     what: Hardware Machine Learning Research Lead
     when: Aug 2019–May 2020
     info: >
       Research into the use of FPGAs as universal function approximators using evolutionary algorithms. The goal: evolve architectures that solve ML problems 1000x faster than neural networks. <a href='https://github.com/pelillian/varro'>GitHub</a><br><br>
       Led a team of 5 and was advised by <a href='https://scholar.google.com/citations?user=4FQXSP8AAAAJ&hl=en'>Viktor Prasanna</a>.
   - org: Robotic Embedded Systems Lab
-    where: USC Viterbi
+    where: USC Viterbi, Los Angeles, CA
     what: ML Researcher/Software Developer
     when: Oct 2018–Jan 2020
     info: >
       Research in reinforcement learning for multi-task learning and topological exploration, as well as the use of neuroevolution algorithms as an alternative to gradient descent for training neural networks. Developer on the next-generation platform for RL research, <a href='https://github.com/rlworkgroup/garage'>Garage</a>, an open-source project.
   - org: Cybernetics Lab
-    where: RWTH Aachen University (Germany)
+    where: RWTH Aachen University, Germany
     what: Robotics/ML Researcher
     when: May–Aug 2018
     info: >
       Research in neural networks and reinforcement learning applied to robotics (using a UR5). Applied neuroscience methods to understand the internal organization of neural networks. Published first <a href='https://arxiv.org/abs/1812.05687'>paper</a>.
   - org: Kawasaki Disease Research Center, CAIS++
-    where: UCSD
+    where: UCSD, San Diego, CA
     what: Machine Learning Researcher
     when: Aug 2017–Aug 2018
     info: >
       Research using machine learning (incl. SVMs, boosted decision trees, and deep neural networks) to diagnose the rare childhood illness, Kawasaki Disease. Refining ensemble models that outperform previous state-of-the-art methods. <a href='https://github.com/pelillian/machine-learning-kd-diagnosis'>GitHub</a>
   - org: Breinify, Inc.
-    where: San Francisco
+    where: San Francisco, CA
     what: Software Developer
     when: May 2017–Aug 2017
     info: >
       During my summer 2017 internship, I implemented an ML pipeline at scale, retrieving aggregated data from a graph database and sending inferences to a responsive web platform.
   - org: Machine Learning Center
-    where: USC Viterbi
+    where: USC Viterbi, Los Angeles, CA
     what: Machine Learning Researcher
     when: Aug 2016–May 2018
     info: >
