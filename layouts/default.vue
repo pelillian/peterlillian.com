@@ -54,7 +54,7 @@ html {
     'Helvetica Neue',
     Arial,
     sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 18px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -83,20 +83,28 @@ html {
   text-align: center;
 }
 
+.right {
+  text-align: right;
+  float: right;
+}
+
 h1 {
   display: block;
   font-size: 100px;
+  font-weight: bold;
   letter-spacing: 10px;
 }
 
 h2 {
   display: block;
-  font-size: 30px;
+  font-size: 50px;
+  font-weight: bold;
   margin-top: 90px;
 }
 
 .button {
   font-size: 50px;
+  font-weight: bold;
   position: relative;
   margin: 20px;
   color: #fff;
