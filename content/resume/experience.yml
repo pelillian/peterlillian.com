@@ -3,6 +3,8 @@ data:
     where: Mountain View, CA (Remote)
     what: Machine Learning Engineer
     when: Dec 2020–Present
+    info: >
+      Development work on low-level machine learning models for Groq's Tensor Streaming Processor. Interfacing directly with customers, working with them to create the best system for their needs.
   - org: Apple
     where: Austin, TX (Remote)
     what: Data Scientist, Machine Learning
