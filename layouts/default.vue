@@ -102,6 +102,15 @@ h2 {
   margin-top: 90px;
 }
 
+a {
+  font-weight: bold;
+  color: #e7bf8f;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .button {
   font-size: 50px;
   font-weight: bold;
@@ -115,6 +124,7 @@ h2 {
   transition-property: color transform;
   &:hover, &:focus {
     color: #180030;
+    text-decoration: none;
     transform: scale(1);
     &::after {
       opacity: 1;
