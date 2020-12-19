@@ -1,6 +1,6 @@
 <template>
-  <div @mousemove="move" @scroll="scroll">
-    <Nuxt :style="perspective" />
+  <div @mousemove="move" @scroll="scroll" :style="perspective" >
+    <Nuxt/>
   </div>
 </template>
 
@@ -171,7 +171,10 @@ a {
 .page-leave-active {
   transition: transform 0.5s ease, opacity 0.5s ease !important;
 }
-.page-enter,
+.page-enter {
+  opacity: 0;
+  transform: rotateX(30deg) rotateY(-30deg) !important;
+}
 .page-leave-to {
   opacity: 0;
   transform: rotateX(30deg) rotateY(30deg) !important;
