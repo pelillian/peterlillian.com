@@ -3,6 +3,7 @@
     <div>
       <h1>RESUME</h1>
       <links />
+
       <h2>PROJECTS &amp; EXPERIENCE</h2>
       <div
         v-for="item in experience.data"
@@ -13,6 +14,7 @@
         <span>{{ item.what }}</span><span class="dim right">{{ item.where }}</span>
         <p v-html="item.info" />
       </div>
+
       <h2>PUBLICATIONS</h2>
       <div class="item">
         <p><a href="https://arxiv.org/abs/1812.05687"><b>Ablation of a Robot's Brain: Neural Networks Under a Knife</b></a><span class="right">2018</span></p>
@@ -20,6 +22,23 @@
         <p>
           It is still not fully understood exactly how neural networks are able to solve the complex tasks that have recently pushed AI research forward. We present a novel method for determining how information is structured inside a neural network. Using ablation (a neuroscience technique for cutting away parts of a brain to determine their function), we approach several neural network architectures from a biological perspective. Through an analysis of this method's results, we examine important similarities between biological and artificial neural networks to search for the implicit knowledge locked away in the network's weights.
         </p>
+      </div>
+
+      <h2>EDUCATION</h2>
+      <div class="item">
+        <p><b>University of Southern California</b></p>
+        <p>MS in Electrical Engineering (Machine Learning)<span class="right">2018–2020</span></p>
+        <pre>
+          GPA: 3.8
+          Rose Hills Research Scholarship
+          Accepted to the Progressive Degree Program
+        </pre>
+        <p>BS in Computer Engineering and Computer Science<span class="right">2015–2019</span></p>
+        <pre>
+          GPA: 3.7
+          Full-Tuition Trustee Scholarship (Merit-based)
+          Photography Minor
+        </pre>
       </div>
     </div>
   </div>
@@ -49,6 +68,13 @@ export default {
     b {
       font-size: 24px;
     }
+  }
+  pre {
+    margin-top: 9px;
+    font-family: inherit;
+  }
+  .indent {
+    margin-left: 40px;
   }
 }
 
