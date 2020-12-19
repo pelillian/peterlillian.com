@@ -1,0 +1,41 @@
+data:
+  - title: PROGRESS
+    image: 0_Documentation.jpg
+    dir: images/photo/progress
+    date: 2018-11-01
+  - title: EYES
+    image: eyesii_1.jpg
+    dir: images/photo/eyes
+    date: 2018-07-01
+  - title: GEOM / ATYPE
+    image: images/art/geom.jpg
+    date: 2018-02-01
+  - title: THE INSIGNIFICANCE
+    image: space_space1.jpg
+    dir: images/photo/space
+    date: 2017-05-01
+    info: This work puts humans directly in the center of a grand scene, as we are used to seeing ourselves. We don't see how small we are compared to a world full of billions in an infinite universe because we are always the main characters of our own lives.<br><br>The world is so big, but we aren't so good at seeing it.
+  - title: SAINTS
+    image: saint6.jpg
+    dir: images/photo/saint
+    date: 2017-03-01
+  - title: TASK OF THE BLACKSMITH
+    image: forge02.jpg
+    dir: images/photo/forge
+    date: 2017-03-01
+  - title: THREE DIMENSIONS
+    image: 3D_05.jpg
+    dir: images/photo/3D
+    date: 2016-11-01
+  - title: PEOPLE
+    image: CopyrightPeterLillian_People (0).jpg
+    dir: images/photo/people
+    date: 2015-07-01
+  - title: PLACES
+    image: CopyrightPeterLillian_Places (4).jpg
+    dir: images/photo/places
+    date: 2015-06-01
+  - title: THINGS
+    image: CopyrightPeterLillian_Things (1).jpg
+    dir: images/photo/things
+    date: 2015-01-01
