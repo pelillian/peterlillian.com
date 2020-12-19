@@ -125,6 +125,10 @@ export default {
   font-size: 16px;
 }
 
+h2 {
+  margin-top: 90px;
+}
+
 .fade-height-enter-active, .fade-height-leave-active, .fade-height-move {
   transition: all 0.2s ease;
   transition-property: opacity max-height transform margin-top;
