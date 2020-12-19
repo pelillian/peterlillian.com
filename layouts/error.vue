@@ -2,9 +2,8 @@
   <transition name="page">
     <div class="container">
       <div>
-        <h1 v-if="error.statusCode === 404">PAGE NOT FOUND</h1>
-        <h1 v-else>AN ERROR OCCURED</h1>
-        <h1>{{ error.statusCode }}</h1>
+        <h2 v-if="error.statusCode === 404">404 PAGE NOT FOUND</h2>
+        <h2 v-else>ERROR {{ error.statusCode }}</h2>
         <br>
         <div class="links">
           <NuxtLink
