@@ -25,6 +25,9 @@ export default {
       }
     }
   },
+  mounted() {
+    document.addEventListener('scroll', this.scroll)
+  },
   methods: {
     move(e) {
       const w = window.innerWidth,
@@ -38,15 +41,8 @@ export default {
       this.h = h
     },
     scroll() {
-      const w = window.innerWidth,
-        h = window.innerHeight,
-        sh = window.scrollY
-      console.log(w, h, sh)
-      this.yS = sh
+      this.yS = window.scrollY
     }
-  },
-  mounted() {
-    document.addEventListener('scroll', this.scroll)
   }
 }
 </script>
