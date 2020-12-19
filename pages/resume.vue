@@ -40,6 +40,25 @@
           Photography Minor
         </pre>
       </div>
+
+      <h2>ACHIEVEMENTS &amp; SKILLS</h2>
+      <div class="item">
+        <p><b>Development</b></p>
+        <span>Python (numpy/sklearn/matplotlib/pandas), Tensorflow, Java, C, C++, HTML, JS, Vue, SQL, AWS, Spark, MapReduce, CUDA, OpenMP, Verilog, Docker, Ubuntu, Command Line, vim, tmux, Nginx, Linux Webserver</span>
+      </div>
+      <div class="item">
+        <p><b>Programs</b></p>
+        <span>Adobe Suite (Photoshop, Illustrator, AfterEffects, Premiere), Cinema 4D, Cadence Virtuoso</span>
+      </div>
+      <div class="item">
+        <p><b>Other</b></p>
+        <span>Public Speaking, Eagle Scout, Writing (won CSPA’s Gold Circle for Best Nonfiction Article)</span>
+      </div>
+
+      <h2>INTERESTS</h2>
+      <div class="item">
+        <p>Artificial Intelligence, <a href='https://www.instagram.com/ptlil/'>Photography</a>, House music, Cr&egrave;me br&ucirc;l&eacute;e, Backpacking, History, Tea, Medieval Scandinavian Art, Sailing, Skiing</p>
+      </div>
     </div>
   </div>
 </template>
