@@ -4,15 +4,17 @@
       <h1>ART</h1>
       <links />
 
-      <div
-        v-for="item in works.data"
-        :key="item.dir"
-        class="item center"
-      >
-        <img
-          :src="artLink(item)"
+      <div class="works">
+        <div
+          v-for="item in works.data"
+          :key="item.dir"
+          class="item center button"
         >
-        <h2>{{ item.title }}</h2>
+          <img
+            :src="artLink(item)"
+          >
+          <h2 class="button-text" :data-after="item.title">{{ item.title }}</h2>
+        </div>
       </div>
 
       <links />
@@ -48,9 +50,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.works {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
 .item {
   img {
-    width: 360px;
+    width: 400px;
     border-radius: 24px;
   }
 }

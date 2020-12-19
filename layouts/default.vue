@@ -142,15 +142,21 @@ a {
   &.small {
     font-size: 36px;
   }
+  .button-text {
+    position: relative;
+    &::after {
+      padding: 0 !important;
+    }
+  }
   &:hover, &:focus {
     color: #180030;
     text-decoration: none;
     transform: scale(1);
-    &::after {
+    &::after, .button-text::after {
       opacity: 1;
     }
   }
-  &::after {
+  &::after, .button-text::after {
     content: attr(data-after);
     position: absolute;
     z-index: 5;
