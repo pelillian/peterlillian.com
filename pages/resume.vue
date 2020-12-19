@@ -12,7 +12,7 @@
       >
         <p><b>{{ item.org }}</b><span class="right">{{ item.when }}</span></p>
         <span>{{ item.what }}</span><span class="dim right">{{ item.where }}</span>
-        <p v-html="item.info" />
+        <p v-html="item.info" /><!-- TODO: Add "show more" button to hide older experience -->
       </div>
 
       <h2>PUBLICATIONS</h2>
