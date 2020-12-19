@@ -1,6 +1,10 @@
 <template>
-  <div @mousemove="move" @scroll="scroll" :style="perspective" >
-    <Nuxt/>
+  <div
+    :style="perspective"
+    @mousemove="move"
+    @scroll="scroll"
+  >
+    <Nuxt />
   </div>
 </template>
 
@@ -111,7 +115,6 @@ h2 {
   display: block;
   font-size: 50px;
   font-weight: bold;
-  margin-top: 90px;
 }
 
 a {
@@ -164,6 +167,28 @@ a {
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     transition: opacity 0.3s ease;
+  }
+}
+
+.item {
+  font-weight: normal;
+  text-align: left;
+  margin-top: 48px;
+  p {
+    margin-top: 18px;
+    b {
+      font-size: 24px;
+    }
+  }
+  pre {
+    margin-top: 9px;
+    font-family: inherit;
+  }
+  .indent {
+    margin-left: 40px;
+  }
+  &.center {
+    text-align: center;
   }
 }
 

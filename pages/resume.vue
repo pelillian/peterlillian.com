@@ -121,28 +121,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.item {
-  font-weight: normal;
-  text-align: left;
-  margin-top: 48px;
-  p {
-    margin-top: 18px;
-    b {
-      font-size: 24px;
-    }
-  }
-  pre {
-    margin-top: 9px;
-    font-family: inherit;
-  }
-  .indent {
-    margin-left: 40px;
-  }
-  &.center {
-    text-align: center;
-  }
-}
-
 .dim {
   font-size: 16px;
 }
