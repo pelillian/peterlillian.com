@@ -59,7 +59,7 @@ export default {
 .item {
   img {
     width: 400px;
-    border-radius: 24px;
+    border-radius: 44px;
   }
 }
 </style>
