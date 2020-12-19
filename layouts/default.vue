@@ -66,6 +66,7 @@ html {
     sans-serif;
   font-weight: normal;
   font-size: 18px;
+  line-height: 130%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
