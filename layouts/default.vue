@@ -1,5 +1,5 @@
 <template>
-  <div @mousemove="move">
+  <div @mousemove="move" @scroll="scroll">
     <Nuxt :style="perspective" />
   </div>
 </template>
@@ -12,13 +12,16 @@ export default {
       yRot: 0,
       xT: 0,
       yT: 0,
-      zT: 0
+      zT: 0,
+      yS: 0,
+      h: 0
     }
   },
   computed: {
     perspective() {
       return {
-        transform: `translate3d(${this.xT}px,${this.yT}px,${this.zT}px) perspective(800px) rotateX(${this.xRot}deg) rotateY(${this.yRot}deg)`
+        transform: `translate3d(${this.xT}px,${this.yT}px,${this.zT}px) perspective(800px) rotateX(${this.xRot}deg) rotateY(${this.yRot}deg)`,
+        'transform-origin': `50% ${this.yS + (this.h / 2)}px`
       }
     }
   },
@@ -26,13 +29,24 @@ export default {
     move(e) {
       const w = window.innerWidth,
         h = window.innerHeight,
-        offX = 0.5 - e.pageX / w,
-        offY = 0.5 - e.pageY / h
-      this.yRot = -offX * 14
-      this.xRot = offY * 14
+        offX = 0.5 - e.screenX / w,
+        offY = 0.5 - e.screenY / h
+      this.yRot = -offX * 10
+      this.xRot = offY * 10
       this.xT = offX * 20
       this.yT = offY * 20
+      this.h = h
+    },
+    scroll() {
+      const w = window.innerWidth,
+        h = window.innerHeight,
+        sh = window.scrollY
+      console.log(w, h, sh)
+      this.yS = sh
     }
+  },
+  mounted() {
+    document.addEventListener('scroll', this.scroll)
   }
 }
 </script>
@@ -76,6 +90,7 @@ html {
   margin: 0 auto;
   min-height: 100vh;
   max-width: 800px;
+  padding: 15vh 0;
   width: 60vw;
   display: flex;
   justify-content: center;
