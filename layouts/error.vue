@@ -1,20 +1,18 @@
 <template>
-  <transition name="page">
-    <div class="container">
-      <div>
-        <h2 v-if="error.statusCode === 404">404 PAGE NOT FOUND</h2>
-        <h2 v-else>ERROR {{ error.statusCode }}</h2>
-        <br>
-        <div class="links">
-          <NuxtLink
-            to="/"
-            class="button"
-            data-after="HOME PAGE"
-          >HOME PAGE</NuxtLink>
-        </div>
+  <div class="container">
+    <div>
+      <h2 v-if="error.statusCode === 404">404 PAGE NOT FOUND</h2>
+      <h2 v-else>ERROR {{ error.statusCode }}</h2>
+      <br>
+      <div class="links">
+        <NuxtLink
+          to="/"
+          class="button"
+          data-after="HOME PAGE"
+        >HOME PAGE</NuxtLink>
       </div>
     </div>
-  </transition>
+  </div>
 </template>
 
 <script>

@@ -1,24 +1,22 @@
 <template>
-  <div class="container">
-    <div>
-      <h1>ART</h1>
-      <links />
+  <div>
+    <h1>ART</h1>
+    <links />
 
-      <div class="works">
-        <div
-          v-for="item in works.data"
-          :key="item.dir"
-          class="item center button"
+    <div class="works">
+      <div
+        v-for="item in works.data"
+        :key="item.dir"
+        class="item center button"
+      >
+        <img
+          :src="artLink(item)"
         >
-          <img
-            :src="artLink(item)"
-          >
-          <h2 class="button-text" :data-after="item.title">{{ item.title }}</h2>
-        </div>
+        <h2 class="button-text" :data-after="item.title">{{ item.title }}</h2>
       </div>
-
-      <links />
     </div>
+
+    <links />
   </div>
 </template>
 
