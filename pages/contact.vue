@@ -33,8 +33,11 @@ export default {
 
 <style lang="scss" scoped>
 .contact {
-  padding-top: 15px;
-  display: flex;
-  flex-flow: column wrap;
+  padding-top: 18px;
+  a.button {
+    display: list-item;
+    list-style-type: none;
+    margin: 0;
+  }
 }
 </style>
