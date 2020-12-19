@@ -127,13 +127,18 @@ a {
   font-size: 50px;
   font-weight: bold;
   position: relative;
+  display: inline-block;
   margin: 20px;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
   padding: 10px 30px;
   transform: scale(0.8);
   transition: all 0.3s ease;
   transition-property: color transform;
+  &.small {
+    font-size: 36px;
+  }
   &:hover, &:focus {
     color: #180030;
     text-decoration: none;

@@ -5,14 +5,35 @@
       <links />
 
       <h2>PROJECTS &amp; EXPERIENCE</h2>
-      <div
-        v-for="item in experience.data"
-        :key="item.info"
-        class="item"
+      <transition-group
+        tag="div"
+        name="fade-height"
       >
-        <p><b>{{ item.org }}</b><span class="right">{{ item.when }}</span></p>
-        <span>{{ item.what }}</span><span class="dim right">{{ item.where }}</span>
-        <p v-html="item.info" /><!-- TODO: Add "show more" button to hide older experience -->
+        <div
+          v-for="item in visibleExp"
+          :key="item.info"
+          class="item"
+        >
+          <p><b>{{ item.org }}</b><span class="right">{{ item.when }}</span></p>
+          <span>{{ item.what }}</span><span class="dim right">{{ item.where }}</span>
+          <p v-html="item.info" /><!-- TODO: Add "show more" button to hide older experience -->
+        </div>
+      </transition-group>
+      <div
+        class="item center"
+      >
+        <span
+          v-if="numVisibleExps < experience.data.length"
+          class="button small"
+          data-after="SHOW MORE"
+          @click="showMoreExp"
+        >SHOW MORE</span>
+        <span
+          v-else
+          class="button small"
+          data-after="SHOW LESS"
+          @click="showLessExp"
+        >SHOW LESS</span>
       </div>
 
       <h2>PUBLICATIONS</h2>
@@ -57,17 +78,39 @@
 
       <h2>INTERESTS</h2>
       <div class="item">
-        <p>Artificial Intelligence, <a href='https://www.instagram.com/ptlil/'>Photography</a>, House music, Cr&egrave;me br&ucirc;l&eacute;e, Backpacking, History, Tea, Medieval Scandinavian Art, Sailing, Skiing</p>
+        <p>Artificial Intelligence, <a href="https://www.instagram.com/ptlil/">Photography</a>, House music, Cr&egrave;me br&ucirc;l&eacute;e, Backpacking, History, Tea, Medieval Scandinavian Art, Sailing, Skiing</p>
       </div>
+
+      <links />
     </div>
   </div>
 </template>
 
 <script>
+const DEFAULT_NUM_VISIBLE_EXPS = 4
+
 export default {
   async asyncData({ $content, params }) {
     const experience = await $content('resume/experience').fetch()
     return { experience }
+  },
+  data() {
+    return {
+      numVisibleExps: DEFAULT_NUM_VISIBLE_EXPS
+    }
+  },
+  computed: {
+    visibleExp() {
+      return this.experience.data.slice(0, this.numVisibleExps)
+    }
+  },
+  methods: {
+    showMoreExp() {
+      this.numVisibleExps += 2
+    },
+    showLessExp() {
+      this.numVisibleExps = DEFAULT_NUM_VISIBLE_EXPS
+    }
   },
   head() {
     return {
@@ -95,9 +138,27 @@ export default {
   .indent {
     margin-left: 40px;
   }
+  &.center {
+    text-align: center;
+  }
 }
 
 .dim {
   font-size: 16px;
+}
+
+.fade-height-enter-active, .fade-height-leave-active, .fade-height-move {
+  transition: all 0.2s ease;
+  transition-property: opacity max-height transform margin-top;
+}
+.fade-height-enter, .fade-height-leave-to {
+  opacity: 0;
+  max-height: 0px;
+  margin-top: 0px;
+}
+.fade-height-enter-to, .fade-height-leave {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 48px;
 }
 </style>
