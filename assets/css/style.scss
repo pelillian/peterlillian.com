@@ -150,9 +150,9 @@ a {
 }
 .page-enter {
   opacity: 0;
-  transform: rotateX(30deg) rotateY(-30deg) !important;
+  transform: translate(30px, 30px);
 }
 .page-leave-to {
   opacity: 0;
-  transform: rotateX(30deg) rotateY(30deg) !important;
+  transform: translate(-30px, -30px);
 }
