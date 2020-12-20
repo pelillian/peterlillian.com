@@ -5,11 +5,11 @@
       <h2 v-else>ERROR {{ error.statusCode }}</h2>
       <br>
       <div class="links">
-        <NuxtLink
+        <nuxt-link
           to="/"
           class="button"
           data-after="HOME PAGE"
-        >HOME PAGE</NuxtLink>
+        >HOME PAGE</nuxt-link>
       </div>
     </div>
   </div>

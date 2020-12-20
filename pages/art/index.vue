@@ -1,22 +1,25 @@
 <template>
-  <div>
-    <h1>ART</h1>
-    <links />
+  <div class="container">
+    <div>
+      <h1>ART</h1>
+      <links />
 
-    <div class="works">
-      <div
-        v-for="item in works.data"
-        :key="item.dir"
-        class="item center button"
-      >
-        <img
-          :src="artLink(item)"
+      <div class="works">
+        <nuxt-link
+          v-for="item in works.data"
+          :key="item.dir"
+          :to="'/art/' + item.dir"
+          class="item center button"
         >
-        <h2 class="button-text" :data-after="item.title">{{ item.title }}</h2>
+          <img
+            :src="artLink(item)"
+          >
+          <h2 class="button-text" :data-after="item.title">{{ item.title }}</h2>
+        </nuxt-link>
       </div>
-    </div>
 
-    <links />
+      <links />
+    </div>
   </div>
 </template>
 
@@ -30,7 +33,7 @@ export default {
   },
   methods: {
     artLink(item) {
-      let link = 'assets/linked'
+      let link = 'assets/linked/images/art'
       if (item.dir) {
         link = path.join(link, item.dir, item.image)
       } else {

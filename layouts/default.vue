@@ -4,9 +4,7 @@
     @mousemove="move"
     @scroll="scroll"
   >
-    <div class="container">
-      <Nuxt />
-    </div>
+    <Nuxt />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="links">
-    <NuxtLink
+    <nuxt-link
       v-for="link in links"
       :key="link.to"
       :to="link.to"
