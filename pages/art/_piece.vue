@@ -13,8 +13,6 @@
 </template>
 
 <script>
-import path from 'path'
-
 export default {
   async asyncData({ $content, params, error }) {
     const works = (await $content('art/works').fetch()).data
@@ -32,7 +30,6 @@ export default {
     }
   },
   mounted() {
-    const link = path.join('assets/linked/images/art', this.item.dir)
     this.importImgs(require.context('~/assets/linked/images/art', true, /\.(png|jpe?g|svg)$/))
   },
   methods: {
