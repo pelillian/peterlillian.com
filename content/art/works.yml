@@ -35,17 +35,17 @@ data:
     dir: 3d
     date: 2016-11-01
   people:
-    title: PEOPLE
-    image: CopyrightPeterLillian_People (0).jpg
+    title: PORTRAIT WORK
+    image: alenka07.jpg
     dir: people
     date: 2015-07-01
-  places:
-    title: PLACES
-    image: CopyrightPeterLillian_Places (4).jpg
-    dir: places
-    date: 2015-06-01
-  things:
-    title: THINGS
-    image: CopyrightPeterLillian_Things (1).jpg
-    dir: things
+  assorted:
+    title: ASSORTED WORK
+    image: CopyrightPeterLillian_Things (8).jpg
+    dir: assorted
     date: 2015-01-01
+  bw:
+    title: EARLY MONOCHROME WORK
+    image: bw000scan014_2.jpg
+    dir: bw
+    date: 2014-01-01
