@@ -3,20 +3,44 @@
     <div>
       <h1>ART</h1>
       <links />
+      <img
+        v-for="img in imgs"
+        :key="img"
+        :src="img"
+      >
     </div>
   </div>
 </template>
 
 <script>
+import path from 'path'
+
 export default {
   async asyncData({ $content, params, error }) {
-    const works = await $content('art/works').fetch()
+    const works = (await $content('art/works').fetch()).data
     const piece = params.piece
-    const dirs = works.data.filter(d => d.dir).map(d => d.dir)
+    const dirs = Object.keys(works)
     if (!dirs.includes(piece)) {
       error({ statusCode: 404, message: 'Page not found' })
     }
-    return { piece }
+    const item = works[piece]
+    return { item }
+  },
+  data() {
+    return {
+      imgs: []
+    }
+  },
+  mounted() {
+    const link = path.join('assets/linked/images/art', this.item.dir)
+    this.importImgs(require.context('~/assets/linked/images/art', true, /\.(png|jpe?g|svg)$/))
+  },
+  methods: {
+    importImgs(arr) {
+      const reg = new RegExp(`^\\./${this.item.dir}/`)
+      const imageKeys = arr.keys().filter(k => reg.test(k))
+      this.imgs = imageKeys.map(arr)
+    }
   },
   head() {
     return {
@@ -27,16 +51,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.works {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-}
-.item {
-  img {
-    width: 400px;
-    border-radius: 44px;
-  }
-}
 </style>

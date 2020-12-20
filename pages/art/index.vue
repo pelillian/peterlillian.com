@@ -6,7 +6,7 @@
 
       <div class="works">
         <nuxt-link
-          v-for="item in works.data"
+          v-for="item in works"
           :key="item.dir"
           :to="'/art/' + item.dir"
           class="item center button"
@@ -24,22 +24,18 @@
 </template>
 
 <script>
-import path from 'path'
-
 export default {
   async asyncData({ $content, params }) {
-    const works = await $content('art/works').fetch()
+    const works = (await $content('art/works').fetch()).data
     return { works }
   },
   methods: {
     artLink(item) {
-      let link = 'assets/linked/images/art'
+      let link = item.image
       if (item.dir) {
-        link = path.join(link, item.dir, item.image)
-      } else {
-        link = path.join(link, item.image)
+        link = item.dir + '/' + item.image
       }
-      return require(`~/${link}`)
+      return require(`~/assets/linked/images/art/${link}`)
     }
   },
   head() {
