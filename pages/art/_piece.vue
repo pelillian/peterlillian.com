@@ -62,7 +62,6 @@ export default {
           thumbnail: img
         }
       })
-      console.log(items)
       return items
     }
   },
