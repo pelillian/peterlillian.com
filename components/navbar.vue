@@ -8,10 +8,16 @@
 export default {
   computed: {
     links() {
-      return this.pages.filter((pg) => {
-        const path = this.$nuxt.$route.path
-        return pg.to === '/' ? path !== '/' : true
-      })
+      const path = this.$nuxt.$route.path
+      const pages = this.pages.slice()
+      const idx = pages.findIndex(pg => path.includes(pg.to))
+      if (idx !== -1) {
+        pages[idx] = {
+          title: 'HOME',
+          to: '/'
+        }
+      }
+      return pages
     },
     pages() {
       return [
@@ -30,10 +36,6 @@ export default {
         {
           title: 'CONTACT',
           to: '/contact'
-        },
-        {
-          title: 'HOME',
-          to: '/'
         }
       ]
     }
