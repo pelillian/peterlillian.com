@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div>
+      <navbar />
       <h1>RESUME</h1>
-      <links />
 
       <h2>PROJECTS &amp; EXPERIENCE</h2>
       <transition-group
@@ -81,7 +81,7 @@
         <p>Artificial Intelligence, <a href="https://www.instagram.com/ptlil/">Photography</a>, House music, Cr&egrave;me br&ucirc;l&eacute;e, Backpacking, History, Tea, Medieval Scandinavian Art, Sailing, Skiing</p>
       </div>
 
-      <links />
+      <navbar />
     </div>
   </div>
 </template>

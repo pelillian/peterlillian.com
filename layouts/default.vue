@@ -16,7 +16,7 @@ export default {
       yRot: 0,
       xT: 0,
       yT: 0,
-      zT: 0,
+      zT: -1000,
       yS: 0,
       h: 0
     }

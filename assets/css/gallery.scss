@@ -1,0 +1,19 @@
+.works {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  grid-auto-flow: dense;
+  .button {
+    padding: 0;
+    width: 100%;
+    img {
+      width: 100%;
+      &.preview {
+        height: 500px;
+        object-fit: cover;
+      }
+      border-radius: 44px;
+    }
+  }
+}

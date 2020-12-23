@@ -11,7 +11,7 @@
       <p>
         they'll have the same existential problems that ants do: entropy is always increasing.
       </p>
-      <links />
+      <navbar />
     </div>
   </div>
 </template>

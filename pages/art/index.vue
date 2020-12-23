@@ -1,24 +1,25 @@
 <template>
   <div class="container">
     <div>
+      <navbar />
       <h1>ART</h1>
-      <links />
 
       <div class="works">
         <nuxt-link
           v-for="item in works"
           :key="item.dir"
           :to="'/art/' + item.dir"
-          class="item center button"
+          class="center button"
         >
           <img
             :src="artLink(item)"
+            class="preview"
           >
           <h2 class="button-text" :data-after="item.title">{{ item.title }}</h2>
         </nuxt-link>
       </div>
 
-      <links />
+      <navbar />
     </div>
   </div>
 </template>
@@ -46,17 +47,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.works {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-}
-.item {
-  img {
-    width: 400px;
-    border-radius: 44px;
-  }
-}
-</style>
+<style src="~/assets/css/gallery.scss" lang="scss" scoped />

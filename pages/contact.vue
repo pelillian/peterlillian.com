@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div>
+      <navbar />
       <h1>CONTACT</h1>
-      <links />
       <div class="contact">
         <a class="button" href="mailto:p@peterlillian.com" data-after="Email p@peterlillian.com">
           Email p@peterlillian.com

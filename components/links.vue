@@ -13,50 +13,29 @@
 
 <script>
 export default {
-  data() {
-    return {
-      pages: [
-        {
-          title: 'RESUME',
-          to: '/resume'
-        },
-        {
-          title: 'ART',
-          to: '/art'
-        },
-        {
-          title: 'THOUGHTS',
-          to: '/thoughts'
-        },
-        {
-          title: 'CONTACT',
-          to: '/contact'
-        },
-        {
-          title: 'HOME',
-          to: '/'
-        }
-      ]
-    }
-  },
-  computed: {
-    links() {
-      return this.pages.filter(pg => pg.to !== this.$nuxt.$route.path)
+  props: {
+    links: {
+      type: Array,
+      required: true
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@media screen and (min-width: 800px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .links {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: row;
+  margin: 30px 0;
+  max-width: 800px;
+  width: 60vw;
   justify-content: center;
   align-items: center;
   align-content: center;
-  max-width: 100%;
   .button {
     margin: 5px 0 0 0;
   }

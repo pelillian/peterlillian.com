@@ -1,13 +1,32 @@
 <template>
   <div class="container">
     <div>
-      <h1>ART</h1>
-      <links />
-      <img
-        v-for="img in imgs"
-        :key="img"
-        :src="img"
+      <back />
+      <h1>{{ item.title }}</h1>
+
+      <photoswipe
+        class="works"
+        :options="{
+          barsSize: { top: 0, bottom: 'auto' },
+          shareEl: false,
+          counterEl: false,
+          tapToClose: true,
+          tapToToggleControls: false
+        }"
       >
+        <div
+          v-for="src in imgs.slice(1)"
+          :key="src"
+          v-pswp="src"
+          class="center button"
+        >
+          <img
+            :src="src"
+          >
+        </div>
+      </photoswipe>
+
+      <back />
     </div>
   </div>
 </template>
@@ -29,6 +48,24 @@ export default {
       imgs: []
     }
   },
+  computed: {
+    iw() {
+      return window.innerWidth
+    },
+    ih() {
+      return window.innerHeight
+    },
+    items() {
+      const items = this.imgs.map((img) => {
+        return {
+          src: img,
+          thumbnail: img
+        }
+      })
+      console.log(items)
+      return items
+    }
+  },
   mounted() {
     this.importImgs(require.context('~/assets/linked/images/art', true, /\.(png|jpe?g|svg)$/))
   },
@@ -47,5 +84,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style src="~/assets/css/gallery.scss" lang="scss" scoped />
