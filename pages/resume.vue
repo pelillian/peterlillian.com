@@ -114,7 +114,7 @@ export default {
   },
   head() {
     return {
-      title: 'Peter Lillian\'s Resume'
+      title: 'Resume | Peter Lillian'
     }
   }
 }
