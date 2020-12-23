@@ -30,9 +30,9 @@ export default {
   }
 }
 .links {
-  margin: 30px 0;
+  margin: 30px auto;
   max-width: 800px;
-  width: 60vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
   align-content: center;
