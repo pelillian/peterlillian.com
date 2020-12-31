@@ -59,7 +59,7 @@ spreadsheets by hand?
 Of course, Microsoft Excel isn’t going to revolt against us anytime
 soon, but for the purposes of this paper we will assume that we have
 solved the superintelligent control problem (as this is a technical
-challenge) and are able to create friendly AI that won’t harm us.[1]
+challenge) and are able to create friendly AI that won’t harm us.<sup>1</sup>
 There is one job, though, that might seem smart to keep as a human
 occupation. Leadership—an especially valued human quality—will likely be
 the last job handed over to the machines. For our own sakes, it
@@ -112,7 +112,7 @@ by AI, as they would be built with real long-term planning abilities.
 This means that the Earth and the environment would greatly benefit from
 governments actually understanding how risky actions like logging the
 Amazon can be. With this kind of planning, governments will be able to
-address existential risks[2] like asteroid impacts or global pandemics
+address existential risks<sup>2</sup> like asteroid impacts or global pandemics
 \[16\]. An AI government would also be adept at finding and dealing with
 threats we can’t forsee, such as dangers from other disruptive
 technologies (e.g. nanotech) or gamma ray bursts, any of which could
@@ -298,10 +298,10 @@ class="csl-right-inline">A. MacIntyre, *A short history of ethics: A
 history of moral philosophy from the homeric age to the 20th century*.
 Routledge, 2003.</span>
 
-[1] A discussion of the dangers of unfriendly AI is out of scope here,
+<sup>1</sup> A discussion of the dangers of unfriendly AI is out of scope here,
 but the curious reader will find Nick Bostrom’s *Superintelligence:
 Paths, Dangers, Strategies* \[10\] to be an enlightening overview of the
 topic.
 
-[2] Existential risks are risks to the continued survival of life on
+<sup>2</sup> Existential risks are risks to the continued survival of life on
 this planet or in the universe \[16\].
