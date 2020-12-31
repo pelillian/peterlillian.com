@@ -39,6 +39,17 @@ export default {
     '@nuxt/content'
   ],
 
+  hooks: {
+    'content:file:beforeParse': (document) => {
+      if (document.extension === '.md') {
+        document.data = document.data.replace(/<img/gi, '<v-img')
+        document.data = document.data.replace(/ \/>/gi, '></v-img>')
+        document.data = document.data.replace(/ style="[^"]*"/gi, '')
+        return document
+      }
+    }
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     followSymlinks: true,

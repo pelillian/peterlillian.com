@@ -7,8 +7,8 @@
       <div class="works">
         <nuxt-link
           v-for="item in works"
-          :key="item.dir"
-          :to="'/thoughts/' + item.dir"
+          :key="item.folder"
+          :to="'/thoughts/' + item.folder"
           class="center button"
         >
           <img
@@ -27,14 +27,14 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const works = (await $content('thoughts/articles').fetch()).data
+    const works = (await $content('thoughts').fetch())
     return { works }
   },
   methods: {
     thoughtLink(item) {
       let link = item.image
-      if (item.dir) {
-        link = item.dir + '/' + item.image
+      if (item.folder) {
+        link = item.folder + '/' + item.image
       }
       return require(`~/assets/linked/docs/thoughts/${link}`)
     }
