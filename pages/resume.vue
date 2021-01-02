@@ -19,22 +19,26 @@
           <p v-html="item.info" />
         </div>
       </transition-group>
-      <div
+      <transition
+        tag="div"
         class="item center"
+        name="fade"
       >
         <span
           v-if="numVisibleExps < experience.data.length"
+          key="more"
           class="button small"
           data-after="SHOW MORE"
           @click="showMoreExp"
         >SHOW MORE</span>
         <span
           v-else
+          key="less"
           class="button small"
           data-after="SHOW LESS"
           @click="showLessExp"
         >SHOW LESS</span>
-      </div>
+      </transition>
 
       <h2>PUBLICATIONS</h2>
       <div class="item">
