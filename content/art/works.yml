@@ -10,7 +10,7 @@ data:
     dir: eyes
     date: 2018-07-01
   atype:
-    title: GEOM / ATYPE
+    title: GEOM & ATYPE
     image: geom.jpg
     date: 2018-02-01
   insignificance:
@@ -18,7 +18,7 @@ data:
     image: space_space1.jpg
     dir: insignificance
     date: 2017-05-01
-    info: This work puts humans directly in the center of a grand scene, as we are used to seeing ourselves. We don't see how small we are compared to a world full of billions in an infinite universe because we are always the main characters of our own lives.<br><br>The world is so big, but we aren't so good at seeing it.
+    info: Everyone's default state is to put ourselves at the center of a grand scene—the brain does this automatically. We don't notice how small we are compared to an infinite universe.
   saints:
     title: SAINTS
     image: saint6.jpg
