@@ -70,7 +70,7 @@ export default {
   },
   methods: {
     importImgs(arr) {
-      const reg = new RegExp(`^\\./${this.item.dir}/`)
+      const reg = new RegExp(`^\\./${this.item.folder}/`)
       const imageKeys = arr.keys().filter(k => reg.test(k))
       this.imgs = imageKeys.map(arr)
     }

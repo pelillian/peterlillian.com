@@ -7,12 +7,12 @@
       <div class="works">
         <nuxt-link
           v-for="item in works"
-          :key="item.dir"
-          :to="'/art/' + item.dir"
+          :key="item.folder"
+          :to="artLink(item)"
           class="center button"
         >
           <img
-            :src="artLink(item)"
+            :src="artImg(item)"
             class="preview"
           >
           <h2 class="button-text" :data-after="item.title">{{ item.title }}</h2>
@@ -31,12 +31,19 @@ export default {
     return { works }
   },
   methods: {
-    artLink(item) {
+    artImg(item) {
       let link = item.image
-      if (item.dir) {
-        link = item.dir + '/' + item.image
+      if (item.folder) {
+        link = item.folder + '/' + item.image
       }
       return require(`~/assets/linked/images/art/${link}`)
+    },
+    artLink(item) {
+      if (item.video) {
+        return '/art/video/' + item.name
+      } else {
+        return '/art/' + item.folder
+      }
     }
   },
   head() {

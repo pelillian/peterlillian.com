@@ -2,50 +2,52 @@ data:
   progress:
     title: PROGRESS
     image: 0_Documentation.jpg
-    dir: progress
+    folder: progress
     date: 2018-11-01
   eyes:
     title: EYES
     image: eyes8.jpg
-    dir: eyes
+    folder: eyes
     date: 2018-07-01
   atype:
     title: GEOM & ATYPE
     image: geom.jpg
+    name: atype
+    video: https://player.vimeo.com/video/385777671
     date: 2018-02-01
   insignificance:
     title: THE INSIGNIFICANCE
     image: space_space1.jpg
-    dir: insignificance
+    folder: insignificance
     date: 2017-05-01
     info: Everyone's default state is to put ourselves at the center of a grand scene—the brain does this automatically. We don't notice how small we are compared to an infinite universe.
   saints:
     title: SAINTS
     image: saint6.jpg
-    dir: saints
+    folder: saints
     date: 2017-03-01
   blacksmith:
     title: TASK OF THE BLACKSMITH
     image: forge02.jpg
-    dir: blacksmith
+    folder: blacksmith
     date: 2017-03-01
   3d:
     title: THREE DIMENSIONS
     image: 3D_05.jpg
-    dir: 3d
+    folder: 3d
     date: 2016-11-01
   people:
     title: PORTRAIT WORK
     image: alenka07.jpg
-    dir: people
+    folder: people
     date: 2015-07-01
   assorted:
     title: ASSORTED WORK
     image: CopyrightPeterLillian_Things (8).jpg
-    dir: assorted
+    folder: assorted
     date: 2015-01-01
   bw:
     title: EARLY MONOCHROME WORK
     image: bw000scan014_2.jpg
-    dir: bw
+    folder: bw
     date: 2014-01-01
