@@ -1,7 +1,8 @@
 <template>
   <div class="container dark">
     <div>
-      <iframe :src="item.video" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="top: 50px; left: 50px; width: calc(100vw - 100px); height: calc(100vh - 100px); position: absolute;" />
+      <iframe :src="item.video" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="min-width: calc(100vw - 300px); min-height: calc(100vh - 300px);" />
+      <back />
     </div>
   </div>
 </template>
