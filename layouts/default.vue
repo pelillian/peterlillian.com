@@ -23,9 +23,13 @@ export default {
   },
   computed: {
     perspective() {
-      return {
-        transform: `translate3d(${this.xT}px,${this.yT}px,${this.zT}px) perspective(800px) rotateX(${this.xRot}deg) rotateY(${this.yRot}deg)`,
-        'transform-origin': `50% ${this.yS + (this.h / 2)}px`
+      if (this.$nuxt.$route.path.includes('video')) {
+        return ''
+      } else {
+        return {
+          transform: `translate3d(${this.xT}px,${this.yT}px,${this.zT}px) perspective(800px) rotateX(${this.xRot}deg) rotateY(${this.yRot}deg)`,
+          'transform-origin': `50% ${this.yS + (this.h / 2)}px`
+        }
       }
     }
   },
