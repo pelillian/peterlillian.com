@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div>
-      <navbar />
+      <back />
       <h1>{{ article.title }}</h1>
       <nuxt-content :document="article" />
-      <navbar />
+      <back />
     </div>
   </div>
 </template>

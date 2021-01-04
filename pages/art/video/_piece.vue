@@ -2,7 +2,7 @@
   <div class="container dark">
     <div>
       <iframe :src="item.video" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="min-width: calc(100vw - 300px); min-height: calc(100vh - 300px);" />
-      <back />
+      <back levels="2" />
     </div>
   </div>
 </template>

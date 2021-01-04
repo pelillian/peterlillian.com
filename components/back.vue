@@ -4,10 +4,18 @@
 
 <script>
 export default {
+  props: {
+    levels: {
+      default: 1,
+      type: Number
+    }
+  },
   computed: {
     to() {
       const p = this.$nuxt.$route.path.split('/')
-      p.pop()
+      for (let i = 0; i < this.levels; i++) {
+        p.pop()
+      }
       return p.join('/')
     },
     links() {
