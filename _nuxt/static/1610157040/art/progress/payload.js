@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/art/progress", {data:[{item:{title:"PROGRESS",image:"0_Documentation.jpg",folder:"progress",date:"2018-11-01T00:00:00.000Z"}}],fetch:[],mutations:void 0});

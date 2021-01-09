@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/art/bw", {data:[{item:{title:"EARLY MONOCHROME WORK",image:"bw000scan014_2.jpg",folder:"bw",date:"2014-01-01T00:00:00.000Z"}}],fetch:[],mutations:void 0});

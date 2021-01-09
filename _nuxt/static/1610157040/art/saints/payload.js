@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/art/saints", {data:[{item:{title:"SAINTS",image:"saint6.jpg",folder:"saints",date:"2017-03-01T00:00:00.000Z"}}],fetch:[],mutations:void 0});

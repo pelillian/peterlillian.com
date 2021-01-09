@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/art/3d", {data:[{item:{title:"THREE DIMENSIONS",image:"3D_05.jpg",folder:"3d",date:"2016-11-01T00:00:00.000Z"}}],fetch:[],mutations:void 0});

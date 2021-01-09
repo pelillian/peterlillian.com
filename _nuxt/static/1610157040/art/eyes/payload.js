@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/art/eyes", {data:[{item:{title:"EYES",image:"eyes8.jpg",folder:"eyes",date:"2018-07-01T00:00:00.000Z"}}],fetch:[],mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/art/insignificance", {data:[{item:{title:"THE INSIGNIFICANCE",image:"space_space1.jpg",folder:"insignificance",date:"2017-05-01T00:00:00.000Z",info:"Everyone's default state is to put ourselves at the center of a grand scene—the brain does this automatically. We don't notice how small we are compared to an infinite universe."}}],fetch:[],mutations:void 0});

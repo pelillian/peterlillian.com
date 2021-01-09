@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/art/blacksmith", {data:[{item:{title:"TASK OF THE BLACKSMITH",image:"forge02.jpg",folder:"blacksmith",date:"2017-03-01T00:00:00.000Z"}}],fetch:[],mutations:void 0});
