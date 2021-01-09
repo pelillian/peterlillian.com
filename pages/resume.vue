@@ -60,7 +60,7 @@
         </pre>
         <p>BS in Computer Engineering and Computer Science<span class="right">2015–2019</span></p>
         <pre>
-          GPA: 3.7
+          GPA: 3.7 (Graduated Magna Cum Laude)
           Full-Tuition Trustee Scholarship (Merit-based)
           Photography Minor
         </pre>
