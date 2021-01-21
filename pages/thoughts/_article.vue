@@ -22,7 +22,7 @@ export default {
   },
   head() {
     return {
-      title: `${article.title} | Thoughts | Peter Lillian`
+      title: `${this.article.title} | Thoughts | Peter Lillian`
     }
   }
 }
