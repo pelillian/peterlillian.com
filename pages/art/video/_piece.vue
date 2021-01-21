@@ -21,7 +21,7 @@ export default {
   },
   head() {
     return {
-      title: 'Art | Peter Lillian'
+      title: `${item.title} | Art | Peter Lillian`
     }
   }
 }
