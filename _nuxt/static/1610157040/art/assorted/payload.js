@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/art/assorted", {data:[{item:{title:"ASSORTED WORK",image:"CopyrightPeterLillian_Things (8).jpg",folder:"assorted",date:"2015-01-01T00:00:00.000Z"}}],fetch:[],mutations:void 0});

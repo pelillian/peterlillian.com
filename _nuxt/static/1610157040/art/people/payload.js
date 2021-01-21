@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/art/people", {data:[{item:{title:"PORTRAIT WORK",image:"alenka07.jpg",folder:"people",date:"2015-07-01T00:00:00.000Z"}}],fetch:[],mutations:void 0});
