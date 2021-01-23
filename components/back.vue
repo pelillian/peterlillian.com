@@ -12,7 +12,11 @@ export default {
   },
   computed: {
     to() {
-      const p = this.$nuxt.$route.path.split('/')
+      const path = this.$nuxt.$route.path
+      const p = path.split('/')
+      if (path.substr(-1) === '/') {
+        p.pop()
+      }
       for (let i = 0; i < this.levels; i++) {
         p.pop()
       }
