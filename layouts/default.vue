@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     perspective() {
-      if (this.$nuxt.$route.path.includes('video')) {
+      if (this.$device.isMobile || this.$nuxt.$route.path.includes('video')) {
         return ''
       } else {
         return {
