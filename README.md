@@ -1,4 +1,5 @@
 # peterlillian.com
+A website in Nuxt.js
 
 ## Build Setup
 
