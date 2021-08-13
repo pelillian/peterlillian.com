@@ -1,6 +1,6 @@
 ---
 title: SURVIVAL
-image: babylon.jpg
+image: blackhole.jpg
 folder: survival
 date: 2020-08-01
 ---
