@@ -5,6 +5,12 @@ data:
     when: Dec 2020–Present
     info: >
       Development on hardware-level SOTA machine learning workloads incl. scaling very large natural language (NLP) and computer vision (CV) models on GroqChip, using both GroqAPI and Groq Compiler. Interfaced directly with customers.
+  - org: Monroe
+    where: Mountain View, CA
+    what: Founder & CEO
+    when: July–Dec 2020
+    info: >
+      Built a platform for B2B online trade shows. <a href='https://monroe.live'>monroe.live</a> Successfully staged several events for small businesses and interviewed for Y Combinator.
   - org: Apple
     where: Austin, TX (Remote)
     what: Data Scientist, Machine Learning
