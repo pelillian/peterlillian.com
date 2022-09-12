@@ -8,7 +8,7 @@ data:
   - org: Monroe
     where: Mountain View, CA
     what: Founder & CEO
-    when: July–Dec 2020
+    when: Aug 2020–Dec 2020
     info: >
       Built a platform for B2B online trade shows (available at <a href='https://monroe.live'>monroe.live</a>). Successfully staged events for small businesses and interviewed for <a href='https://www.ycombinator.com/'>Y Combinator</a>.
   - org: Apple
@@ -33,7 +33,7 @@ data:
   - org: Cybernetics Lab
     where: RWTH Aachen University, Germany
     what: Robotics/ML Researcher
-    when: May–Aug 2018
+    when: May 2018–Aug 2018
     info: >
       Research in neural networks and reinforcement learning applied to robotics (using a UR5). Applied neuroscience methods to understand the internal organization of neural networks. Published first <a href='https://arxiv.org/abs/1812.05687'>paper</a>.
   - org: Kawasaki Disease Research Center, CAIS++
