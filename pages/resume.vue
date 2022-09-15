@@ -68,8 +68,12 @@
 
       <h2>ACHIEVEMENTS &amp; SKILLS</h2>
       <div class="item">
+        <p><b>AI/ML</b></p>
+        <span>Scaling large ML/DL models across systems, Natural Language Processing (NLP), Computer Vision (CV), Reinforcement Learning (RL)
+      </div>
+      <div class="item">
         <p><b>Development</b></p>
-        <span>Python (numpy/sklearn/matplotlib/pandas), Tensorflow, Java, C, C++, HTML, JS, Vue, SQL, AWS, Spark, MapReduce, CUDA, OpenMP, Verilog, Docker, Ubuntu, Command Line, vim, tmux, Nginx, Linux Webserver</span>
+        <span>PyTorch, Tensorflow, JAX, ONNX, TensorRT, CUDA, Python (numpy/sklearn/matplotlib/pandas), Java, C, C++, HTML, JS, Vue, SQL, AWS, Spark, MapReduce, OpenMP, Verilog, Docker, Ubuntu, Command Line, vim, tmux</span>
       </div>
       <div class="item">
         <p><b>Programs</b></p>
@@ -82,7 +86,7 @@
 
       <h2>INTERESTS</h2>
       <div class="item">
-        <p>Artificial Intelligence, <a href="https://www.instagram.com/ptlil/">Photography</a>, House music, Cr&egrave;me br&ucirc;l&eacute;e, Backpacking, History, Tea, Medieval Scandinavian Art, Sailing, Skiing</p>
+        <p>Artificial Intelligence, <a href="https://www.instagram.com/ptlil/">Photography</a>, House music, Cr&egrave;me br&ucirc;l&eacute;e, Backpacking, History, Tea, Medieval Scandinavian Art, Sailing, Skiing, AI Alignment, Entropy/the Future of our Universe/Humanity’s role in it</p>
       </div>
 
       <navbar />
