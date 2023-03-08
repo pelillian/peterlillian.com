@@ -4,7 +4,7 @@ data:
     what: Machine Learning Engineer
     when: Dec 2020–Present
     info: >
-      Development on hardware-level SOTA machine learning workloads incl. scaling very large natural language (NLP) and computer vision (CV) models across nodes of GroqChips, using both GroqAPI and Groq Compiler. Interfaced directly with customers.
+      Development on hardware-level SOTA machine learning workloads incl. scaling very large natural language (NLP) and computer vision (CV) models across nodes of GroqChips. Work on QAT & PTQ for transformers. Interfaced directly with customers, optimizing models for latency/throughput/memory.
   - org: Monroe
     where: Mountain View, CA
     what: Founder & CEO
