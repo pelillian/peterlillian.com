@@ -119,7 +119,7 @@ technologies (e.g. nanotech) or gamma ray bursts, any of which could
 easily wipe out life on earth \[16\].
 
 <figure>
-<img src="fire.jpg" style="width:75.0%" alt=" Firefighters tackle a blaze in California. Humans tend to solve the short-term problem (fight the fire) but not the long-term problem (prevent future fires). [17]" /><figcaption aria-hidden="true"> <em>Firefighters tackle a blaze in California. Humans tend to solve the short-term problem (fight the fire) but not the long-term problem (prevent future fires).</em> <span class="citation" data-cites="fire">[17]</span></figcaption>
+<img src="fire.jpg" style="width:75.0%" alt=" Firefighters tackle a blaze in California. Humans tend to solve the short-term problem (fight the fire) but not the long-term problem (prevent future fires)." /><figcaption aria-hidden="true"> <em>Firefighters tackle a blaze in California. Humans tend to solve the short-term problem (fight the fire) but not the long-term problem (prevent future fires).</em></figcaption>
 </figure>
 
 If we decided not to implement an AI government, a very different set of
@@ -265,10 +265,6 @@ Travel to Superintelligence*, pp. 277–284, 2003.</span>
 <span class="csl-left-margin">\[16\] </span><span
 class="csl-right-inline">N. Bostrom and M. M. Cirkovic, *Global
 catastrophic risks*. Oxford University Press, 2011.</span>
-
-<span class="csl-left-margin">\[17\] </span><span
-class="csl-right-inline">T. Economist, “The world is losing the war
-against climate change,” *The Economist*, Aug. 2018.</span>
 
 <span class="csl-left-margin">\[18\] </span><span
 class="csl-right-inline">C. Rampell, “Our politicians have no idea how
