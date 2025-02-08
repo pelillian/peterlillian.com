@@ -119,7 +119,7 @@ technologies (e.g. nanotech) or gamma ray bursts, any of which could
 easily wipe out life on earth \[16\].
 
 <figure>
-<img src="fire.jpg" style="width:75.0%" alt=" Firefighters tackle a blaze near Boston, MA. Humans tend to solve the short-term problem (fight the fire) but not the long-term problem (end climate change). [17]" /><figcaption aria-hidden="true"> <em>Firefighters tackle a blaze near Boston, MA. Humans tend to solve the short-term problem (fight the fire) but not the long-term problem (end climate change).</em> <span class="citation" data-cites="fire">[17]</span></figcaption>
+<img src="fire.jpg" style="width:75.0%" alt=" Firefighters tackle a blaze in California. Humans tend to solve the short-term problem (fight the fire) but not the long-term problem (prevent future fires). [17]" /><figcaption aria-hidden="true"> <em>Firefighters tackle a blaze in California. Humans tend to solve the short-term problem (fight the fire) but not the long-term problem (prevent future fires).</em> <span class="citation" data-cites="fire">[17]</span></figcaption>
 </figure>
 
 If we decided not to implement an AI government, a very different set of
