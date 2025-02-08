@@ -1,8 +1,14 @@
 data:
+  - org: Stealth Startup
+    where: Andromeda Galaxy
+    what: Founder
+    when: Dec 2024–Present
+    info: >
+      Yes.
   - org: Groq
     where: Mountain View, CA (Remote)
     what: Machine Learning Engineer
-    when: Dec 2020–Present
+    when: Dec 2020–Nov 2024
     info: >
       Development on hardware-level SOTA machine learning workloads incl. scaling very large natural language (NLP) and computer vision (CV) models across nodes of GroqChips. Work on QAT & PTQ for transformers. Interfaced directly with customers, optimizing models for latency/throughput/memory.
   - org: Monroe
