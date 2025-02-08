@@ -69,7 +69,7 @@
       <h2>ACHIEVEMENTS &amp; SKILLS</h2>
       <div class="item">
         <p><b>AI/ML</b></p>
-        <span>Scaling large ML/DL models across systems, Natural Language Processing (NLP), Computer Vision (CV), Reinforcement Learning (RL)
+        <span>Scaling large ML/DL models across systems, Natural Language Processing (NLP), Computer Vision (CV), Reinforcement Learning (RL)</span>
       </div>
       <div class="item">
         <p><b>Development</b></p>
