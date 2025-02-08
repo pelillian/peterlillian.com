@@ -10,7 +10,7 @@ data:
     what: Machine Learning Engineer
     when: Dec 2020–Nov 2024
     info: >
-      Development on hardware-level SOTA machine learning workloads incl. scaling very large natural language (NLP) and computer vision (CV) models across nodes of GroqChips. Work on QAT & PTQ for transformers. Interfaced directly with customers, optimizing models for latency/throughput/memory.
+      Development on hardware-level SOTA machine learning workloads including scaling very large natural language (NLP) and computer vision (CV) models across nodes of GroqChips, as well as training these models from scratch/finetuning. Work on QAT & PTQ for transformers. Interfaced directly with customers, optimizing models for latency/throughput/memory. Advised hardware team on future ML developments.
   - org: Monroe
     where: Mountain View, CA
     what: Founder & CEO
