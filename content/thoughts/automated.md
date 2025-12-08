@@ -6,7 +6,9 @@ date: 2019-07-01
 ---
 
 ## PETER LILLIAN
-## JULY 2019
+
+
+#### Note: I wrote this a long time ago. I'm leaving it up just for history's sake but it is a very flawed argument.
 
 > When Marduk commanded me to give justice to the people of
 > the land and to let them have good governance, I set forth...
@@ -58,8 +60,8 @@ spreadsheets by hand?
 
 Of course, Microsoft Excel isn’t going to revolt against us anytime
 soon, but for the purposes of this paper we will assume that we have
-solved the superintelligent control problem (as this is a technical
-challenge) and are able to create friendly AI that won’t harm us.<sup>1</sup>
+solved the superintelligent control problem and are able to create
+friendly AI that won’t harm us.<sup>1</sup>
 There is one job, though, that might seem smart to keep as a human
 occupation. Leadership—an especially valued human quality—will likely be
 the last job handed over to the machines. For our own sakes, it
